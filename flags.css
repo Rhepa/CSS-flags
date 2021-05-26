@@ -1,0 +1,258 @@
+.flag{
+	display: grid;
+
+}
+
+/*start flag Sweden*/
+.flag-sweden{
+	width: 640px;
+	height:480px;
+	grid-template-columns: 200px 80px 360px;
+	grid-template-rows: 200px 80px 200px ;
+	
+}
+
+.flag-sweden div {
+		/*border: 1px solid black;*/
+}
+
+.grid-swed-blue{
+	background-color: #2265a0;
+}
+
+.grid-swed-yellow{
+	background-color: #f2cd18;
+}
+/*end flag Sweden*/
+
+/* start flag finland */
+
+.flag-finland{
+	width: 900px;
+	height:650px;
+	grid-template-columns: 250px 150px 500px;
+	grid-template-rows: 250px 150px 250px ;
+
+}
+
+.flag-finland div {
+		/*border: 1px solid black;*/
+}
+
+.grid-fin-blue{
+	background-color: #2265a0;
+}
+
+.grid-fin-white{
+	background-color: white;
+	border: 2px solid black;
+}
+/*end flag finland*/
+ 
+/* start flag denmark */
+
+.flag-denmark{
+	width: 510px;
+	height:219px;
+	grid-template-columns: 180px 60px 270px;
+	grid-template-rows: 180px 60px 180px ;
+	
+}
+
+.flag-denmark div {
+		/*border: 1px solid black;*/
+}
+
+.grid-den-white{
+	background-color: white;
+	
+}
+
+.grid-den-red{
+	background-color: #f31212;
+}
+
+/*end flag denmark*/
+
+/*start flag iceland*/
+
+.flag-iceland{
+	width: 875px;
+	height:630px;
+	grid-template-columns: 245px 35px 70px 35px 490px;
+	grid-template-rows: 245px 35px 70px 35px 245px;
+	
+}
+
+.grid-ice-white{
+	background-color: white;
+}
+
+.grid-ice-red{
+	background-color: #f31212;
+}
+
+.grid-ice-blue{
+	background-color: #156bc6;
+}
+
+/*end flag iceland*/
+
+
+/* start flag-rhepa*/
+
+.flag-rhepa {
+	width: 650px;
+	height:450px;
+	grid-template-columns: 150px 50px 250px 50px 150px ;
+	grid-template-rows: 150px 150px 150px 50px 150px;
+	border: 25px solid #6a6a90;
+}
+
+.flag-rhepa div {
+	/*border: 1px solid black;*/
+}
+
+
+.grid-item-darkpink {
+	background-color: #bd427d;
+}
+
+
+/*diamond*/
+.grid-item-diamond{
+	 width: 0;
+      height: 0;
+      border: 50px solid transparent;
+      border-bottom: 70px solid  #ffb3b3;
+      position: relative;
+      top: -45px;
+    
+  }
+.grid-item-left-diamond {
+	 width: 0;
+      height: 0;
+      border: 50px solid transparent;
+      border-bottom: 70px solid  #ffb3b3;
+      position: relative;
+      top: -45px;
+      left: -50px;
+}
+.grid-item-left-diamond:after,
+.grid-item-diamond:after{
+ content: '';
+      position: absolute;
+      left: -50px;
+      top: 70px;
+      width: 0;
+      height: 0;
+      border: 50px solid transparent;
+      border-top: 70px solid  #ffb3b3;
+}
+
+/*end diamond*/
+
+
+/*corners */
+.grid-item-left-curve,
+.grid-item-right-curve,
+.grid-item-bottomright-curve,
+.grid-item-bottomleft-curve{
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
+  position: relative;
+  background-color: #e6e6ff;
+}
+
+.grid-item-left-curve:before,
+.grid-item-right-curve:before,
+.grid-item-bottomright-curve:before,
+.grid-item-bottomleft-curve:before {
+  content: "";
+  display: block;
+  width: 200%;
+  height: 800%;
+  position: absolute;
+  border-radius: 50%;
+}
+
+.grid-item-bottomleft-curve:before {
+
+  bottom: 0;
+  left: 0;
+  box-shadow: -50px 50px 0 0 #bd427d;
+}
+
+.grid-item-bottomright-curve:before {
+
+  bottom: 0;
+  right: 0;
+  box-shadow: 50px 50px 0 0 #bd427d;
+}
+
+.grid-item-left-curve:before {
+
+  top: 0;
+  left: 0;
+  box-shadow: -50px -50px 0 0 #bd427d;
+}
+
+.grid-item-right-curve:before {
+
+	 top: 0;
+  right: 0;
+  box-shadow: 50px -50px 0 0 #bd427d;
+}
+/*end corners*/
+
+/*start star*/
+.grid-item-star{
+  margin: 50px 0;
+      position: center;
+      display: block;
+      color:  #ffb3b3;
+      width: 0px;
+      height: 0px;
+      border-right: 130px solid transparent;
+      border-bottom: 100px solid  #ffb3b3;
+      border-left: 120px solid transparent;
+      transform: rotate(20deg);
+
+       
+}
+.grid-item-star:before {
+      border-bottom: 100px solid  #ffb3b3;
+      border-left: 50px solid transparent;
+      border-right: 50px solid transparent;
+      position: absolute;
+      height: 0;
+      width: 0;
+      top: -55px;
+      left: -85px;
+      display: block;
+      content: '';
+      transform: rotate(-35deg);
+      
+}
+
+.grid-item-star:after{
+	 position: absolute;
+      display: block;
+      color: red;
+      top: -3px;
+      left: -120px;
+      width: 0px;
+      height: 0px;
+      border-right: 130px solid transparent;
+      border-bottom: 100px solid  #ffb3b3;
+      border-left: 120px solid transparent;
+      transform: rotate(-70deg);
+   
+      content: '';
+}
+
+/*end star*/
+
+
+/* end flag-rhepa */
